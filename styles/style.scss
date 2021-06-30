@@ -1,5 +1,26 @@
 @import './nullstyles.scss';
 
+@keyframes bounce {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
 //Шаблоны
 .button {
     border-radius: 12px;
@@ -26,7 +47,7 @@
         min-height: 121px;
         display: flex;
         align-items: center;
-        padding: 0 15%;
+        padding: 0 19.58%;
 
         .header__logo {
             display: flex;
@@ -91,7 +112,7 @@
 
     .main-card {
         margin: 0 auto;
-        padding: 191px 18% 0;
+        padding: 191px 19.58% 0;
         background-image: url(../images/main-card.jpg);
         // background-image: linear-gradient(108deg, rgb(7, 29, 104) 0%, rgb(11, 75, 236) 100%);
 
@@ -136,8 +157,91 @@
 
     }
 
+    .get-card {
+        padding: 160px 19.58% 200px;
+        background-color: #b0b4ba;
 
+        h2 {
+            margin: 0;
+            font-size: 24px;
+            font-family: "Poppins";
+            color: rgb(128, 128, 128);
+            text-transform: uppercase;
+            text-align: center;
+        }
 
+        h3 {
+            margin: 0;
+            margin-top: 20px;
+            font-size: 30px;
+            font-family: "Poppins";
+            color: black;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+        }
 
+        .card-container {
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
+            .card-item {
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                padding: 49px 35px;
+                width: 370px;
+                max-height: 349px;
+
+                &:hover {
+                    animation: bounce 1s;
+                }
+
+                img {
+                    margin: auto;
+                    max-height: 100px;
+                }
+
+                h2 {
+                    margin-top: 26px;
+                    font-size: 20px;
+                    font-family: "Poppins";
+                    color: rgb(0, 0, 0);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                p {
+                    margin-top: 35px;
+                    font-size: 14px;
+                    font-family: "Raleway";
+                    color: rgb(128, 128, 128);
+                    text-align: center;
+                    max-width: 291px;
+                    line-height: 2;
+
+                }
+
+            }
+
+            .card-item_active {
+                background-image: linear-gradient(108deg, rgb(7, 29, 104) 0%, rgb(11, 75, 236) 100%);
+                max-height: 430px;
+                padding: 91px 30px;
+                margin: 0 30px;
+
+                h2 {
+                    color: #fff
+                }
+
+                p {
+                    color: #fff
+                }
+            }
+
+        }
+    }
 }
