@@ -136,7 +136,6 @@ h6 {
   width: 125px;
   height: 30px;
   font-size: 14px;
-  font-family: "Poppins";
   color: #0b4bec;
   font-weight: bold;
   line-height: 2;
@@ -145,7 +144,6 @@ h6 {
 .title__template, .page .get-card h2, .page .service h2 {
   margin: 0;
   font-size: 24px;
-  font-family: "Poppins";
   color: gray;
   text-transform: uppercase;
 }
@@ -154,7 +152,6 @@ h6 {
   margin: 0;
   margin-top: 20px;
   font-size: 30px;
-  font-family: "Poppins";
   color: black;
   text-transform: uppercase;
   font-weight: bold;
@@ -166,7 +163,7 @@ body {
 
 .page {
   max-width: 1920px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0 auto;
 }
 
@@ -204,7 +201,6 @@ body {
 
 .page .header .header__logo .logo__text .logo__title {
   font-size: 18px;
-  font-family: "Poppins";
   color: white;
   text-transform: uppercase;
   text-align: left;
@@ -214,7 +210,6 @@ body {
 
 .page .header .header__logo .logo__text .logo__description {
   font-size: 12px;
-  font-family: "Poppins";
   color: white;
   margin: 0 auto;
 }
@@ -231,7 +226,6 @@ body {
   margin-left: 44px;
   color: white;
   font-size: 14px;
-  font-family: "Poppins";
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.857;
@@ -261,7 +255,6 @@ body {
 
 .page .main-card h2 {
   font-size: 40px;
-  font-family: "Poppins";
   color: white;
   font-weight: bold;
   line-height: 0.65;
@@ -271,7 +264,6 @@ body {
 .page .main-card p {
   margin-top: 34px;
   font-size: 14px;
-  font-family: "Nunito";
   color: white;
   line-height: 2;
   text-align: center;
@@ -290,6 +282,10 @@ body {
   margin-top: 92px;
   width: 92%;
   max-height: 500px;
+  -webkit-animation: bounce 20s;
+          animation: bounce 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .page .get-card {
@@ -345,7 +341,6 @@ body {
 .page .get-card .card-container .card-item h2 {
   margin-top: 26px;
   font-size: 20px;
-  font-family: "Poppins";
   color: black;
   font-weight: bold;
   text-transform: uppercase;
@@ -407,7 +402,6 @@ body {
 
 .page .service .service__container .service-item p {
   font-size: 20px;
-  font-family: "Poppins";
   color: #333333;
   line-height: 2.1;
   text-align: center;
@@ -450,7 +444,6 @@ body {
 .page .statistic .statistic__item h2 {
   margin-top: 56px;
   font-size: 52px;
-  font-family: "Poppins";
   color: white;
   font-weight: bold;
   text-align: center;
@@ -459,7 +452,6 @@ body {
 .page .statistic .statistic__item h3 {
   margin-top: 10px;
   font-size: 24px;
-  font-family: "Poppins";
   color: white;
   font-weight: lighter;
   text-align: center;
@@ -471,7 +463,6 @@ body {
 
 .page .feedback__form h2 {
   font-size: 30px;
-  font-family: "Poppins";
   color: #333333;
   font-weight: bold;
   line-height: 0.933;
@@ -498,6 +489,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .page .feedback__form form div input {
@@ -508,14 +500,14 @@ body {
   border-color: black;
   background-color: white;
   opacity: 0.2;
-  width: 554px;
+  width: 94%;
   height: 54px;
 }
 
 .page .feedback__form form div button {
   margin-top: 30px;
   background-color: #0b4bec;
-  width: 550px;
+  width: 94%;
   height: 50px;
   color: #fff;
   font-size: 14px;
@@ -534,7 +526,6 @@ body {
 
 .page .footer p {
   font-size: 14px;
-  font-family: "Poppins";
   color: white;
   line-height: 2;
   text-align: center;
@@ -558,6 +549,12 @@ body {
   }
   .page .statistic {
     padding: 180px 15%;
+  }
+  .page .feedback__form {
+    padding: 140px 15%;
+  }
+  .page .footer {
+    padding: 41px 15% 70px;
   }
 }
 
@@ -605,6 +602,12 @@ body {
   .page .statistic {
     padding: 180px 8%;
   }
+  .page .feedback__form {
+    padding: 140px 8%;
+  }
+  .page .footer {
+    padding: 41px 8% 70px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -626,6 +629,12 @@ body {
   .page .statistic {
     padding: 40px 2%;
   }
+  .page .feedback__form {
+    padding: 40px 2%;
+  }
+  .page .footer {
+    padding: 20px 2% 30px;
+  }
 }
 
 @media screen and (max-width: 890px) {
@@ -640,7 +649,6 @@ body {
     margin-left: 20px;
     color: white;
     font-size: 10px;
-    font-family: "Poppins";
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.857;
@@ -696,6 +704,18 @@ body {
   }
   .page .statistic .statistic__item h2 {
     margin-top: 20px;
+  }
+  .page .feedback__form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page .feedback__form form div input {
+    width: 100%;
+  }
+  .page .feedback__form form div button {
+    width: 100%;
   }
 }
 
@@ -764,6 +784,9 @@ body {
   }
   .page .main-card h2 {
     font-size: 16px;
+  }
+  .page .footer p {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

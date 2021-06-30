@@ -1,5 +1,7 @@
-@import './nullstyles.scss';
+//импорты
+@import "./nullstyles.scss";
 
+//анимашки
 @keyframes bounce {
 
     0%,
@@ -28,7 +30,7 @@
     width: 125px;
     height: 30px;
     font-size: 14px;
-    font-family: "Poppins";
+
     color: rgb(11, 75, 236);
     font-weight: bold;
     line-height: 2;
@@ -37,7 +39,7 @@
 .title__template {
     margin: 0;
     font-size: 24px;
-    font-family: "Poppins";
+
     color: rgb(128, 128, 128);
     text-transform: uppercase;
 }
@@ -46,26 +48,30 @@
     margin: 0;
     margin-top: 20px;
     font-size: 30px;
-    font-family: "Poppins";
+
     color: black;
     text-transform: uppercase;
     font-weight: bold;
 }
 
+//основные стили
 body {
     background-color: #fff;
 }
 
 .page {
     max-width: 1920px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0 auto;
 
     .header {
-        background-image: linear-gradient(90deg, rgba(7, 29, 104, 0.1) 0%, rgba(11, 75, 236, 0.1) 100%, );
+        background-image: linear-gradient(90deg,
+                rgba(7, 29, 104, 0.1) 0%,
+                rgba(11, 75, 236, 0.1) 100%);
 
-        background: linear-gradient(108deg, rgb(7, 29, 104) 0%, rgb(11, 75, 236) 100%);
-
+        background: linear-gradient(108deg,
+                rgb(7, 29, 104) 0%,
+                rgb(11, 75, 236) 100%);
 
         justify-content: space-between;
         min-height: 121px;
@@ -78,16 +84,14 @@ body {
             display: flex;
             align-items: flex-end;
 
-
             .logo__image {
                 margin-right: 15px;
             }
 
-
             .logo__text {
                 .logo__title {
                     font-size: 18px;
-                    font-family: "Poppins";
+
                     color: rgb(255, 255, 255);
                     text-transform: uppercase;
                     text-align: left;
@@ -97,10 +101,9 @@ body {
 
                 .logo__description {
                     font-size: 12px;
-                    font-family: "Poppins";
+
                     color: rgb(255, 255, 255);
                     margin: 0 auto;
-
                 }
             }
         }
@@ -109,29 +112,22 @@ body {
             display: flex;
             color: rgb(255, 255, 255);
 
-
             .navigation__link {
                 text-decoration: none;
                 margin-left: 44px;
                 color: rgb(255, 255, 255);
                 font-size: 14px;
-                font-family: "Poppins";
+
                 font-weight: bold;
                 text-transform: uppercase;
                 line-height: 1.857;
                 text-align: right;
-
-
             }
-
         }
 
         .header__button {
             @extend .button__template;
             margin-left: 38px;
-
-
-
         }
     }
 
@@ -148,7 +144,7 @@ body {
 
         h2 {
             font-size: 40px;
-            font-family: "Poppins";
+
             color: rgb(255, 255, 255);
             font-weight: bold;
             line-height: 0.65;
@@ -158,12 +154,11 @@ body {
         p {
             margin-top: 34px;
             font-size: 14px;
-            font-family: "Nunito";
+
             color: rgb(255, 255, 255);
             line-height: 2;
             text-align: center;
             max-width: 970px;
-
         }
 
         .main-card__button {
@@ -179,8 +174,9 @@ body {
             margin-top: 92px;
             width: 92%;
             max-height: 500px;
+            animation: bounce 20s;
+            animation-iteration-count: infinite;
         }
-
     }
 
     .get-card {
@@ -223,7 +219,7 @@ body {
                 h2 {
                     margin-top: 26px;
                     font-size: 20px;
-                    font-family: "Poppins";
+
                     color: rgb(0, 0, 0);
                     font-weight: bold;
                     text-transform: uppercase;
@@ -238,26 +234,25 @@ body {
                     text-align: center;
                     max-width: 291px;
                     line-height: 2;
-
                 }
-
             }
 
             .card-item_active {
-                background-image: linear-gradient(108deg, rgb(7, 29, 104) 0%, rgb(11, 75, 236) 100%);
+                background-image: linear-gradient(108deg,
+                        rgb(7, 29, 104) 0%,
+                        rgb(11, 75, 236) 100%);
                 max-height: 430px;
                 padding: 91px 30px;
                 margin: 0 30px;
 
                 h2 {
-                    color: #fff
+                    color: #fff;
                 }
 
                 p {
-                    color: #fff
+                    color: #fff;
                 }
             }
-
         }
     }
 
@@ -287,34 +282,30 @@ body {
                 margin-right: 30px;
                 box-sizing: border-box;
 
-
                 // &:last-child {
                 //     margin-right: 0;
                 // }
 
-
-
                 p {
                     font-size: 20px;
-                    font-family: "Poppins";
+
                     color: rgb(51, 51, 51);
                     line-height: 2.1;
                     text-align: center;
-
                 }
 
                 img {
                     width: 100%;
                 }
-
             }
-
         }
     }
 
     .statistic {
-
-        background: linear-gradient(108deg, rgba(7, 29, 104, 0.9) 0%, rgba(11, 75, 236, 0.9) 100%), url(../images/coins.png);
+        background: linear-gradient(108deg,
+                rgba(7, 29, 104, 0.9) 0%,
+                rgba(11, 75, 236, 0.9) 100%),
+            url(../images/coins.png);
         background-size: cover;
         padding: 180px 19.58%;
         display: flex;
@@ -333,41 +324,35 @@ body {
             h2 {
                 margin-top: 56px;
                 font-size: 52px;
-                font-family: "Poppins";
+
                 color: rgb(255, 255, 255);
                 font-weight: bold;
                 text-align: center;
-
             }
 
             h3 {
                 margin-top: 10px;
                 font-size: 24px;
-                font-family: "Poppins";
+
                 color: rgb(255, 255, 255);
                 font-weight: lighter;
                 text-align: center;
-
             }
-
         }
     }
 
     .feedback__form {
         padding: 140px 19.58%;
 
-
         h2 {
             font-size: 30px;
-            font-family: "Poppins";
+
             color: rgb(51, 51, 51);
             font-weight: bold;
             line-height: 0.933;
-
         }
 
         form {
-
             margin-top: 50px;
             display: flex;
             justify-content: space-between;
@@ -376,6 +361,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                width: 100%;
 
                 input {
                     margin-top: 20px;
@@ -385,17 +371,15 @@ body {
                     border-color: rgb(0, 0, 0);
                     background-color: rgb(255, 255, 255);
                     opacity: 0.2;
-                    width: 554px;
+                    width: 94%;
                     height: 54px;
-
-
-
                 }
 
                 button {
                     margin-top: 30px;
                     background-color: rgb(11, 75, 236);
-                    width: 550px;
+                    width: 94%;
+
                     height: 50px;
                     color: #fff;
                     font-size: 14px;
@@ -410,21 +394,24 @@ body {
     }
 
     .footer {
-        background: linear-gradient(108deg, rgba(7, 29, 104, 0.9) 0%, rgba(11, 75, 236, 0.9) 100%), url(../images/footer.png);
+        background: linear-gradient(108deg,
+                rgba(7, 29, 104, 0.9) 0%,
+                rgba(11, 75, 236, 0.9) 100%),
+            url(../images/footer.png);
         background-size: cover;
         padding: 41px 19.58% 70px;
 
         p {
             font-size: 14px;
-            font-family: "Poppins";
+
             color: rgb(255, 255, 255);
             line-height: 2;
             text-align: center;
         }
-
     }
 }
 
+//адаптив
 @media screen and (max-width: 1520px) {
     .page {
         width: 100%;
@@ -439,7 +426,6 @@ body {
 
         .get-card {
             padding: 160px 15% 200px;
-
         }
 
         .service {
@@ -448,6 +434,14 @@ body {
 
         .statistic {
             padding: 180px 15%;
+        }
+
+        .feedback__form {
+            padding: 140px 15%;
+        }
+
+        .footer {
+            padding: 41px 15% 70px;
         }
     }
 }
@@ -458,9 +452,7 @@ body {
             .card-container {
                 margin-top: 80px;
 
-
                 .card-item {
-
                     padding: 30px 20px;
                     max-width: 370px;
                     max-height: 349px;
@@ -476,17 +468,15 @@ body {
                     margin: 0 30px;
 
                     h2 {
-                        color: #fff
+                        color: #fff;
                     }
 
                     p {
-                        color: #fff
+                        color: #fff;
                     }
                 }
-
             }
         }
-
     }
 }
 
@@ -504,7 +494,6 @@ body {
 
         .get-card {
             padding: 160px 8% 200px;
-
         }
 
         .service {
@@ -513,6 +502,14 @@ body {
 
         .statistic {
             padding: 180px 8%;
+        }
+
+        .feedback__form {
+            padding: 140px 8%;
+        }
+
+        .footer {
+            padding: 41px 8% 70px;
         }
     }
 }
@@ -523,7 +520,6 @@ body {
 
         .header {
             padding: 0 2%;
-
         }
 
         .main-card {
@@ -532,7 +528,6 @@ body {
 
         .get-card {
             padding: 40px 2% 200px;
-
         }
 
         .service {
@@ -542,35 +537,36 @@ body {
         .statistic {
             padding: 40px 2%;
         }
+
+        .feedback__form {
+            padding: 40px 2%;
+        }
+
+        .footer {
+            padding: 20px 2% 30px;
+        }
     }
 }
 
 @media screen and (max-width: 890px) {
     .page {
         .header {
-
             .navigation__list {
                 display: flex;
                 color: rgb(255, 255, 255);
-
 
                 .navigation__link {
                     text-decoration: none;
                     margin-left: 20px;
                     color: rgb(255, 255, 255);
                     font-size: 10px;
-                    font-family: "Poppins";
 
                     font-weight: bold;
                     text-transform: uppercase;
                     line-height: 1.857;
                     text-align: right;
-
                 }
-
             }
-
-
         }
     }
 }
@@ -596,21 +592,25 @@ body {
                 .logo__image {
                     margin: 0;
                 }
+
                 .logo__text {
                     .logo__title {
                         display: none;
                     }
+
                     .logo__description {
                         display: none;
                     }
                 }
             }
+
             .navigation__list {
                 .navigation__link {
                     margin-left: 20px;
                     font-size: 10px;
                 }
             }
+
             .header__button {
                 margin-left: 0px;
             }
@@ -625,14 +625,33 @@ body {
                 }
             }
         }
-        .statistic{
+
+        .statistic {
             flex-direction: column;
+
             .statistic__item {
                 margin: 40px auto;
                 padding-bottom: 10px;
                 border-bottom: 1px solid #fff;
-                h2{
+
+                h2 {
                     margin-top: 20px;
+                }
+            }
+        }
+
+        .feedback__form {
+            form {
+                flex-direction: column;
+
+                div {
+                    input {
+                        width: 100%;
+                    }
+
+                    button {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -662,13 +681,10 @@ body {
 @media screen and (max-width: 530px) {
     .page {
         .header {
-
             .header__button {
                 font-size: 12px;
                 width: 100px;
                 height: 30px;
-
-
             }
         }
     }
@@ -677,19 +693,12 @@ body {
 @media screen and (max-width: 490px) {
     .page {
         .header {
-
             .navigation__list {
-
-
                 .navigation__link {
-
                     margin-left: 15px;
 
                     font-size: 8px;
-
-
                 }
-
             }
         }
 
@@ -737,31 +746,29 @@ body {
     .page {
         .header {
             .navigation__list {
-
-
                 .navigation__link {
-
                     margin-left: 10px;
 
                     font-size: 8px;
-
-
                 }
-
             }
 
             .header__button {
                 font-size: 8px;
                 width: 70px;
                 height: 30px;
-
-
             }
         }
 
         .main-card {
             h2 {
                 font-size: 16px;
+            }
+        }
+
+        .footer {
+            p {
+                font-size: 10px;
             }
         }
     }
