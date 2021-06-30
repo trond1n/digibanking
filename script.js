@@ -3,4 +3,5 @@ $(".main-carousel").flickity({
   cellAlign: "left",
   contain: true,
   groupCells: 4,
+  wrapAround: true
 });

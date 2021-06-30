@@ -390,10 +390,6 @@ h6 {
   border-width: 1px;
   border-color: #040404;
   background-color: white;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
   width: 270px;
   height: 354px;
   margin-right: 30px;
@@ -403,16 +399,59 @@ h6 {
   margin-right: 0;
 }
 
-.page .service .service__container .service-item:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .page .service .service__container .service-item p {
   font-size: 20px;
   font-family: "Poppins";
   color: #333333;
   line-height: 2.1;
+  text-align: center;
+}
+
+.page .statistic {
+  background: linear-gradient(108deg, rgba(7, 29, 104, 0.9) 0%, rgba(11, 75, 236, 0.9) 100%), url(../images/coins.png);
+  background-size: cover;
+  padding: 180px 19.58%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page .statistic .statistic__item {
+  max-width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page .statistic .statistic__item img {
+  margin: 0 auto;
+}
+
+.page .statistic .statistic__item h2 {
+  margin-top: 56px;
+  font-size: 52px;
+  font-family: "Poppins";
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.page .statistic .statistic__item h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-family: "Poppins";
+  color: white;
+  font-weight: lighter;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
