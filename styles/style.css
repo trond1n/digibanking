@@ -556,6 +556,9 @@ body {
   .page .service {
     padding: 160px 15%;
   }
+  .page .statistic {
+    padding: 180px 15%;
+  }
 }
 
 @media screen and (max-width: 1270px) {
@@ -599,6 +602,9 @@ body {
   .page .service {
     padding: 160px 8%;
   }
+  .page .statistic {
+    padding: 180px 8%;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -615,6 +621,9 @@ body {
     padding: 40px 2% 200px;
   }
   .page .service {
+    padding: 40px 2%;
+  }
+  .page .statistic {
     padding: 40px 2%;
   }
 }
@@ -673,6 +682,20 @@ body {
   }
   .page .get-card .card-container .card-item_active {
     margin: 20px 0;
+  }
+  .page .statistic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page .statistic .statistic__item {
+    margin: 40px auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+  }
+  .page .statistic .statistic__item h2 {
+    margin-top: 20px;
   }
 }
 

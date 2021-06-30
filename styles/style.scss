@@ -445,6 +445,10 @@ body {
         .service {
             padding: 160px 15%;
         }
+
+        .statistic {
+            padding: 180px 15%;
+        }
     }
 }
 
@@ -507,6 +511,9 @@ body {
             padding: 160px 8%;
         }
 
+        .statistic {
+            padding: 180px 8%;
+        }
     }
 }
 
@@ -529,6 +536,10 @@ body {
         }
 
         .service {
+            padding: 40px 2%;
+        }
+
+        .statistic {
             padding: 40px 2%;
         }
     }
@@ -582,44 +593,26 @@ body {
     .page {
         .header {
             .header__logo {
-
                 .logo__image {
                     margin: 0;
                 }
-
-
                 .logo__text {
                     .logo__title {
                         display: none;
                     }
-
                     .logo__description {
                         display: none;
-
-
                     }
                 }
             }
-
             .navigation__list {
-
-
                 .navigation__link {
-
                     margin-left: 20px;
-
                     font-size: 10px;
-
-
                 }
-
             }
-
             .header__button {
                 margin-left: 0px;
-
-
-
             }
         }
 
@@ -629,6 +622,17 @@ body {
 
                 .card-item_active {
                     margin: 20px 0;
+                }
+            }
+        }
+        .statistic{
+            flex-direction: column;
+            .statistic__item {
+                margin: 40px auto;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #fff;
+                h2{
+                    margin-top: 20px;
                 }
             }
         }
