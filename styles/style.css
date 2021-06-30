@@ -130,7 +130,7 @@ h6 {
   }
 }
 
-.button, .page .header .header__button, .page .main-card .main-card__button {
+.button__template, .page .header .header__button, .page .main-card .main-card__button {
   border-radius: 12px;
   background-color: white;
   width: 125px;
@@ -140,6 +140,24 @@ h6 {
   color: #0b4bec;
   font-weight: bold;
   line-height: 2;
+}
+
+.title__template, .page .get-card h2, .page .service h2 {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Poppins";
+  color: gray;
+  text-transform: uppercase;
+}
+
+.description__template, .page .get-card h3, .page .service h3 {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: "Poppins";
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .page {
@@ -272,23 +290,11 @@ h6 {
 }
 
 .page .get-card h2 {
-  margin: 0;
-  font-size: 24px;
-  font-family: "Poppins";
-  color: gray;
-  text-transform: uppercase;
   text-align: center;
 }
 
 .page .get-card h3 {
-  margin: 0;
-  margin-top: 20px;
-  font-size: 30px;
-  font-family: "Poppins";
-  color: black;
-  text-transform: uppercase;
   text-align: center;
-  font-weight: bold;
 }
 
 .page .get-card .card-container {
@@ -361,5 +367,52 @@ h6 {
 
 .page .get-card .card-container .card-item_active p {
   color: #fff;
+}
+
+.page .service {
+  padding: 160px 19.58%;
+}
+
+.page .service h2 {
+  text-align: left;
+}
+
+.page .service h3 {
+  text-align: left;
+}
+
+.page .service .service__container {
+  margin-top: 60px;
+}
+
+.page .service .service__container .service-item {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #040404;
+  background-color: white;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  width: 270px;
+  height: 354px;
+  margin-right: 30px;
+}
+
+.page .service .service__container .service-item:nth-child(4) {
+  margin-right: 0;
+}
+
+.page .service .service__container .service-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.page .service .service__container .service-item p {
+  font-size: 20px;
+  font-family: "Poppins";
+  color: #333333;
+  line-height: 2.1;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
