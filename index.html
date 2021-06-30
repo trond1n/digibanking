@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Digital Banking</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+
+            <div class="header__logo">
+                <img src="images/logo.png" alt="logo" class="logo__image">
+                <div class="logo__text">
+                    <h1 class="logo__title">Digital Banking</h1>
+                    <p class="logo__description">Be Safe Banking</p>
+                </div>
+
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list_item"><a href="#main-card" class="navigation__link">Cards</a></li>
+                    <li class="navigation__list_item"><a href="#get-card" class="navigation__link">service</a></li>
+                    <li class="navigation__list_item"><a href="#service" class="navigation__link">banking</a></li>
+                    <li class="navigation__list_item"><a href="#statistic" class="navigation__link">faq</a></li>
+                    <li class="navigation__list_item"><a href="#feedback__form" class="navigation__link">contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <button class="button header__button">Create Account</button>
+        </header>
+        <main class="content">
+            <section class="main-card" id="main-card">
+                <h2>To Make Your Life Easier Take a Card</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered There
+                    are many variations of passages of Lorem Ipsum randomised words which don't look even slightly
+                    believable.</p>
+                <button class="button main-card__button">apply now</button>
+                <img src="./images/cards.png" alt="карты">
+                <div class="main-card__shape"></div>
+
+            </section>
+            <section class="get-card" id="get-card">
+                <h2>Easy Process</h2>
+                <h3>To Get A Credit Card</h3>
+                <div class="card-container">
+                    <div class="card-item">
+                        <img src="./images/chart.png" alt="график">
+                        <h2>online application</h2>
+                        <p>Information in the database is published in two formats. It is available in PDF comparison
+                            according to type of credit card.</p>
+                    </div>
+                    <div class="card-item card-item_active">
+                        <img src="./images/handshake.png" alt="рукопожатие">
+                        <h2>Get Approval</h2>
+                        <p>Information in the database is published in two formats. It is available in PDF comparison
+                            according to type of credit card.</p>
+                    </div>
+                    <div class="card-item">
+                        <img src="./images/card in hand.png" alt="карта в руке">
+                        <h2>Get Your Card</h2>
+                        <p>Information in the database is published in two formats. It is available in PDF comparison
+                            according to type of credit card.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="service" id="service">
+                <h2>useful service avaible</h2>
+                <h3>Service of Credit Card</h3>
+                <div class="service__container main-carousel">
+                    <div class="service-item carousel-cell">
+                        <img src="./images/atm.png" alt="банкомат">
+                        <p>Balence transform</p>
+                    </div>
+                    <div class="service-item carousel-cell">
+                        <img src="./images/notepad.png" alt="клавиатура">
+                        <p>Internet Banking</p>
+                    </div>
+                    <div class="service-item carousel-cell">
+                        <img src="./images/terminal.png" alt="терминал">
+                        <p>Buying Payment</p>
+                    </div>
+                    <div class="service-item carousel-cell">
+                        <img src="./images/notebook.png" alt="ноутбук">
+                        <p>Buy Air Ticket</p>
+                    </div>
+                    <div class="service-item carousel-cell">
+                        <img src="./images/atm.png" alt="банкомат">
+                        <p>Balence transform</p>
+                    </div>
+                    <div class="service-item carousel-cell">
+                        <img src="./images/notepad.png" alt="клавиатура">
+                        <p>Internet Banking</p>
+                    </div>
+                    <div class="service-item carousel-cell">
+                        <img src="./images/terminal.png" alt="терминал">
+                        <p>Buying Payment</p>
+                    </div>
+                    <div class="service-item carousel-cell">
+                        <img src="./images/notebook.png" alt="ноутбук">
+                        <p>Buy Air Ticket</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="statistic" id="statistic">
+                <div class="statistic__item">
+                    <img src="./images/people.png" alt="человечки">
+                    <h2>725M</h2>
+                    <h3>Happy User</h3>
+                </div>
+                <div class="statistic__item">
+                    <img src="./images/heart.png" alt="сердце">
+                    <h2>700M</h2>
+                    <h3>User Apprication</h3>
+                </div>
+                <div class="statistic__item">
+                    <img src="./images/cart.png" alt="тележка">
+                    <h2>10M+</h2>
+                    <h3>Payment Service</h3>
+                </div>
+                <div class="statistic__item">
+                    <img src="./images/rocket.png" alt="рокета">
+                    <h2>600M</h2>
+                    <h3>User Feedback</h3>
+                </div>
+            </section>
+
+            <section class="feedback__form" id="feedback__form">
+                <h2>Your Message</h2>
+                <form>
+                    <div>
+                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Email Adress">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div>
+                        <input class="input__message" type="text" placeholder="Message">
+                        <button>Submit</button>
+                    </div>
+
+
+                </form>
+            </section>
+        </main>
+        <section class="footer">
+            <p>Copyright @ Digital Marketing. AllRight Reseverd</p>
+        </section>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="./script.js"></script>
+
+</html>
